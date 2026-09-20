@@ -1,5 +1,11 @@
 # @\_linked/xsd
 
+## 1.0.6
+
+### Patch Changes
+
+- [#10](https://github.com/linked-fw/xsd/pull/10) [`2b9804f`](https://github.com/linked-fw/xsd/commit/2b9804f0fa22eb62b862d3cbb05f002a6e4745a4) Thanks [@flyon](https://github.com/flyon)! - Declare npm as the package manager for this repo, convert the build scripts off `yarn`, and mark `package-lock.json` as a generated file.
+
 ## 1.0.5
 
 ### Patch Changes
