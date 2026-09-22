@@ -21,8 +21,7 @@
     "dual-package": "echo 'adding package.json to each lib folder for dual output support' && tsconfig-to-dual-package ./tsconfig-cjs.json ./tsconfig-esm.json"
   },
   "dependencies": {
-    "@_linked/core": "^2.0.1",
-    "lincd-rdfs": "~1.0"
+    "@_linked/core": "^2.0.1"
   },
   "devDependencies": {
     "@_linked/cli": "^1.2",
