@@ -1,5 +1,19 @@
 # @\_linked/xsd
 
+## 1.0.8
+
+### Patch Changes
+
+- [#14](https://github.com/linked-fw/xsd/pull/14) [`fe5ecbd`](https://github.com/linked-fw/xsd/commit/fe5ecbd1c294f067763fa68c9108f4f3e07082cf) Thanks [@flyon](https://github.com/flyon)! - Compile the whole `src` folder, and let a bare import resolve under Node10.
+
+  The build only emitted what an entry transitively reached, so any module
+  nothing imported was never built — and never type-checked, so it rotted
+  quietly. `include` now covers `src/**/*` with tests excluded explicitly.
+
+  `typesVersions` maps every specifier through `lib/esm/*`, so a `types` value
+  that already carried that prefix had it applied twice and no consumer on
+  classic Node10 resolution could `import` the package by its bare name.
+
 ## 1.0.7
 
 ### Patch Changes
