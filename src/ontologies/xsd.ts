@@ -1,7 +1,5 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
-import { linkedOntology } from '../package.js';
-import * as _this from './xsd.js';
 
 const dataFile = '../data/xsd.json';
 export const loadData = () => {
@@ -45,4 +43,3 @@ export const xsd = {
   anyURI,
 };
 
-linkedOntology(_this, ns, 'xsd', loadData, dataFile);
