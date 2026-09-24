@@ -1,5 +1,20 @@
 # @\_linked/xsd
 
+## 1.0.9
+
+### Patch Changes
+
+- [#16](https://github.com/linked-fw/xsd/pull/16) [`e574964`](https://github.com/linked-fw/xsd/commit/e574964744f9f3642a58ec46a62b5d90ea8fcd30) Thanks [@flyon](https://github.com/flyon)! - The ontology no longer registers by importing itself.
+
+  It carried `import * as _this from './<prefix>.js'` and passed that namespace to
+  `linkedOntology()`. Under `tsc` the self-reference survives; under a bundler it does
+  not — Rollup treats it as a circular import and elides it, so the binding is
+  `undefined` and a consuming app dies at boot with `_this is not defined`.
+
+  Registration now lives in a `<prefix>.register.ts` sibling, imported from the package
+  entry. Nothing changes for consumers: importing this package still registers the
+  ontology.
+
 ## 1.0.8
 
 ### Patch Changes
