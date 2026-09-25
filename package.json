@@ -18,7 +18,8 @@
     "build-esm": "echo \"compiling ESM\" && rimraf ./lib/esm && tsc -p tsconfig-esm.json",
     "build-cjs": "echo \"compiling CJS\" && rimraf ./lib/cjs && tsc -p tsconfig-cjs.json",
     "copy-to-lib": "echo 'copying CSS + JSON assets to lib folder' && copyfiles -u 1 'src/**/*.css' 'src/**/*.json' lib/esm && copyfiles -u 1 'src/**/*.css' 'src/**/*.json' lib/cjs",
-    "dual-package": "echo 'adding package.json to each lib folder for dual output support' && tsconfig-to-dual-package ./tsconfig-cjs.json ./tsconfig-esm.json"
+    "dual-package": "echo 'adding package.json to each lib folder for dual output support' && tsconfig-to-dual-package ./tsconfig-cjs.json ./tsconfig-esm.json",
+    "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
     "@_linked/core": "^2.0.1"
