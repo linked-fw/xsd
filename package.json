@@ -11,7 +11,7 @@
     "email": "rpwverheij@gmail.com"
   },
   "main": "lib/cjs/index.js",
-  "types": "dist/lincd-xsd.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "start": "npm exec linked dev",
     "build": "rimraf ./lib && npm run build-esm && npm run build-cjs && npm run copy-to-lib && npm run dual-package",
