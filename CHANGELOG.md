@@ -1,5 +1,15 @@
 # @\_linked/xsd
 
+## 1.0.10
+
+### Patch Changes
+
+- [#18](https://github.com/linked-fw/xsd/pull/18) [`1337b3d`](https://github.com/linked-fw/xsd/commit/1337b3d111a1a69aa602c6652dccfea5c853449d) Thanks [@flyon](https://github.com/flyon)! - Point `types` at `index.d.ts` so a bare import gets types under node10 resolution.
+
+  `typesVersions` (`{"*": {"*": ["lib/esm/*"]}}`) is applied to the root `types` value, so the
+  previous value resolved to a path under `lib/esm/` that the build never emits. Subpath imports
+  resolved fine through `exports`, which hid the failure from a bare `import … from '@_linked/xsd'`.
+
 ## 1.0.9
 
 ### Patch Changes
