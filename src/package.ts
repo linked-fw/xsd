@@ -22,4 +22,4 @@ export const {
   getPackageShape,
   packageExports,
   packageName,
-} = linkedPackage('@_linked/xsd');
+} = linkedPackage('@_linked/xsd', {mirrors: 'http://www.w3.org/2001/XMLSchema#'});

@@ -11,7 +11,7 @@
  * From a sibling module the same import is ordinary and survives.
  */
 import * as terms from './xsd.js';
-import {loadData, ns} from './xsd.js';
+import {dataFiles, loadData, ns} from './xsd.js';
 import {linkedOntology} from '../package.js';
 
-linkedOntology(terms, ns, 'xsd', loadData, '../data/xsd.json');
+linkedOntology(terms, ns, 'xsd', loadData, dataFiles);
