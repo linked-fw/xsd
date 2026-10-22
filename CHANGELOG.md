@@ -1,5 +1,11 @@
 # @\_linked/xsd
 
+## 1.3.1
+
+### Patch Changes
+
+- [#55](https://github.com/linked-fw/xsd/pull/55) [`fc256bf`](https://github.com/linked-fw/xsd/commit/fc256bf86172f2a92860f844874d50edbe95c4d0) Thanks [@flyon](https://github.com/flyon)! - Ship `xsd.ttl`, which 1.3.0 left out.
+
 ## 1.3.0
 
 ### Minor Changes
