@@ -1,5 +1,5 @@
 ---
-'@_linked/xsd': major
+'@_linked/xsd': minor
 ---
 
 The ontology data ships as Turtle and the package holds only XML Schema's terms.
