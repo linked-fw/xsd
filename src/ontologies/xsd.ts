@@ -1,20 +1,18 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
+import { loadOntologyFiles } from '@_linked/core/ontology/loadOntologyFiles';
 
-const dataFile = '../data/xsd.json';
-export const loadData = () => {
-  //@ts-ignore
-  return import('../data/xsd.json', { with: { type: 'json' } }).then(
-    (data) => data.default
-  );
-};
+/** The package's ontology data, relative to this module (Turtle, copied into `lib/` by the build). */
+export const dataFiles = ['../data/xsd.ttl'];
+
+/** Reads the package's ontology data (server only). */
+export const loadData = () => loadOntologyFiles(import.meta.url, dataFiles);
 
 const base = 'http://www.w3.org/2001/XMLSchema#';
 export const ns = createNameSpace(base);
 Prefix.add('xsd', base);
 
 export const _ontologyResource = ns('');
-export const Bytes = ns('Bytes');
 export const string = ns('string');
 export const boolean = ns('boolean');
 export const date = ns('date');
@@ -29,7 +27,6 @@ export const anyURI = ns('anyURI');
 
 export const xsd = {
   _ontologyResource,
-  Bytes,
   string,
   boolean,
   date,

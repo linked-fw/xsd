@@ -1,0 +1,243 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+xsd:
+    a owl:Ontology ;
+    dc:description "" ;
+    dc:title "XML Schema" .
+
+xsd:NCName
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "NCName" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:NMTOKEN
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "NMTOKEN" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:Name
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "Name" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:anyURI
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "anyURI" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:base64Binary
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "base64Binary" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:boolean
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "boolean" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:byte
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "byte" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:date
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "date" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:dateTime
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "dateTime" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:dateTimeStamp
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "dateTimeStamp" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:dayTimeDuration
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "dayTimeDuration" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:decimal
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "decimal" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:double
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "double" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:duration
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "duration" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:float
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "float" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:gDay
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "gDay" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:gMonth
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "gMonth" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:gMonthDay
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "gMonthDay" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:gYear
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "gYear" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:gYearMonth
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "gYearMonth" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:hexBinary
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "hexBinary" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:int
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "int" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:integer
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "integer" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:language
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "language" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:long
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "long" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:negativeInteger
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "negativeInteger" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:nonNegativeInteger
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "nonNegativeInteger" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:nonPositiveInteger
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "nonPositiveInteger" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:normalizedString
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "normalizedString" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:positiveInteger
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "positiveInteger" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:short
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "short" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:string
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "string" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:time
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "time" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:token
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "token" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:unsignedByte
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "unsignedByte" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:unsignedInt
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "unsignedInt" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:unsignedLong
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "unsignedLong" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:unsignedShort
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "unsignedShort" ;
+    rdfs:subClassOf rdfs:Literal .
+
+xsd:yearMonthDuration
+    a rdfs:Datatype ;
+    rdfs:isDefinedBy xsd: ;
+    rdfs:label "yearMonthDuration" ;
+    rdfs:subClassOf rdfs:Literal .
