@@ -15,5 +15,6 @@ Breaking changes:
   static targetClass = xsd.boolean;
   ```
 
-- `ns`, `dataFiles`, `loadData` and `_ontologyResource` moved to `@_linked/xsd/ontologies/xsd.data`.
+- `ns`, `dataFiles`, `loadData` and `_ontologyResource` moved to `@_linked/xsd/ontologies/xsd.data`;
+  `import * as xsd` no longer reaches them, and the registered ontology carries only the terms.
 - No terms were renamed.
