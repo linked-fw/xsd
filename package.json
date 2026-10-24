@@ -1,10 +1,12 @@
 {
   "name": "@_linked/xsd",
   "displayName": "XML Schema (XSD)",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "lib",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE"
   ],
   "version": "1.4.1",
   "type": "module",
