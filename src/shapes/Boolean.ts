@@ -1,6 +1,6 @@
 import { Shape } from '@_linked/core/shapes/Shape';
 import type { NodeReferenceValue } from '@_linked/core/utils/NodeReference';
-import { xsd } from '../ontologies/xsd.js';
+import * as xsd from '../ontologies/xsd.js';
 import { linkedShape } from '../package.js';
 
 @linkedShape

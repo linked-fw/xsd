@@ -10,6 +10,11 @@
   "type": "module",
   "packageManager": "npm@12.2.0",
   "linkedPackage": true,
+  "linkedOntologies": {
+    "xsd": {
+      "namespace": "http://www.w3.org/2001/XMLSchema#"
+    }
+  },
   "author": {
     "name": "René Verheij",
     "url": "https://github.com/flyon",
@@ -23,10 +28,10 @@
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
-    "@_linked/core": "^2.39.1"
+    "@_linked/core": "^2.41.0"
   },
   "devDependencies": {
-    "@_linked/cli": "^1.56.0",
+    "@_linked/cli": "^1.57.0",
     "@changesets/changelog-github": "^1.0.0",
     "@changesets/cli": "^3.0.0",
     "@types/node": "^24.0.0",
