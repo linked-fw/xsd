@@ -1,5 +1,11 @@
 # @\_linked/xsd
 
+## 1.3.2
+
+### Patch Changes
+
+- [#57](https://github.com/linked-fw/xsd/pull/57) [`6a5372d`](https://github.com/linked-fw/xsd/commit/6a5372dc48b467536e0b7be8cc2f5dbeda116612) Thanks [@flyon](https://github.com/flyon)! - Ships `lib/esm/data/shapes.ttl`; core range raised.
+
 ## 1.3.1
 
 ### Patch Changes
