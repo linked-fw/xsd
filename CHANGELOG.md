@@ -1,5 +1,13 @@
 # @\_linked/xsd
 
+## 1.4.1
+
+### Patch Changes
+
+- [#61](https://github.com/linked-fw/xsd/pull/61) [`6d60fad`](https://github.com/linked-fw/xsd/commit/6d60fad9e1681bb12874fe8c6198f59a4905e764) Thanks [@flyon](https://github.com/flyon)! - New README: the namespace import, and the source of `src/data/xsd.ttl`. The W3C publishes no RDF
+  for XML Schema, so the Turtle is written by hand from XSD 1.1 Part 2 and covers exactly the 39
+  datatypes RDF 1.1 Concepts §5.1 allows. No data or code changed.
+
 ## 1.4.0
 
 ### Minor Changes
