@@ -1,5 +1,11 @@
 # @\_linked/xsd
 
+## 1.4.3
+
+### Patch Changes
+
+- [#65](https://github.com/linked-fw/xsd/pull/65) [`fa1593f`](https://github.com/linked-fw/xsd/commit/fa1593f6d5806f3c2c794826f646ad57e2170a6b) Thanks [@flyon](https://github.com/flyon)! - License: MIT (data under its original license)
+
 ## 1.4.2
 
 ### Patch Changes
