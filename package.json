@@ -1,7 +1,7 @@
 {
   "name": "@_linked/xsd",
   "displayName": "XML Schema (XSD)",
-  "license": "MIT",
+  "license": "MIT AND W3C-20150513",
   "files": [
     "lib",
     "CHANGELOG.md",
