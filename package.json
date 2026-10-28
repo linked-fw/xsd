@@ -11,7 +11,9 @@
   "version": "1.4.3",
   "type": "module",
   "packageManager": "npm@12.2.0",
-  "linkedPackage": true,
+  "linked": {
+    "kind": "ontology"
+  },
   "linkedOntologies": {
     "xsd": {
       "namespace": "http://www.w3.org/2001/XMLSchema#"
