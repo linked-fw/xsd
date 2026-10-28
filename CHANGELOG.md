@@ -1,5 +1,11 @@
 # @\_linked/xsd
 
+## 1.4.4
+
+### Patch Changes
+
+- [#70](https://github.com/linked-fw/xsd/pull/70) [`171e4d0`](https://github.com/linked-fw/xsd/commit/171e4d007cde3125143ed32fd04866ad18fae026) Thanks [@flyon](https://github.com/flyon)! - `package.json` says what this package is in `"linked": {"kind": "ontology"}` instead of `"linkedPackage": true`, which the CLI and server no longer read.
+
 ## 1.4.3
 
 ### Patch Changes
