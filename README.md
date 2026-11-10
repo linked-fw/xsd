@@ -14,8 +14,11 @@ import * as xsd from '@_linked/xsd/ontologies/xsd';
 @literalProperty({path: schema.birthDate, datatype: xsd.date, maxCount: 1})
 ```
 
-`ontologies/xsd` has one named export per datatype (39); `ontologies/xsd.data` holds `ns`,
-`dataFiles`, `_ontologyResource` and `loadData()`. `linked generate-ontology` writes the modules
+`ontologies/xsd` has one named export per datatype (39), each an `{id}` with the datatype's full
+IRI. `ontologies/index` registers the ontology with its data and suggested prefix; the package entry and
+`shapes/index` import it. The package registers no prefix: an app lists the prefixes it uses in
+its own prefix map. Where code needs a namespace function, core's `createNameSpace('http://www.w3.org/2001/XMLSchema#')` gives one.
+`linked generate-ontology` writes the modules
 from the data (`package.json` `"linkedOntologies"`), and `linked build` fails when they are stale;
 never edit them by hand.
 
