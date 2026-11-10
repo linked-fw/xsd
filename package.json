@@ -16,7 +16,11 @@
   },
   "linkedOntologies": {
     "xsd": {
-      "namespace": "http://www.w3.org/2001/XMLSchema#"
+      "namespace": "http://www.w3.org/2001/XMLSchema#",
+      "data": [
+        "xsd.ttl",
+        "xsd-added.ttl"
+      ]
     }
   },
   "author": {

@@ -41,7 +41,9 @@ allows in RDF (the "RDF-compatible XSD types"), each `a rdfs:Datatype` with its 
 The built-in datatypes RDF 1.1 says SHOULD NOT be used (`QName`, `ENTITY`, `ID`, `IDREF`,
 `NOTATION`, `IDREFS`, `ENTITIES`, `NMTOKENS`) and the special `anyType`, `anySimpleType` and
 `anyAtomicType` are not in the data. The file also declares the ontology itself (`xsd: a
-owl:Ontology`).
+owl:Ontology`); its suggested prefix (`vann:preferredNamespacePrefix "xsd"`,
+`vann:preferredNamespaceUri`) is in `src/data/xsd-added.ttl`, the same place as in the other
+standard-vocabulary packages.
 
 To change the data, edit `src/data/xsd.ttl` against those two specifications and run
 `npx linked generate-ontology`. The package never adds a term to the namespace that XSD 1.1 does
