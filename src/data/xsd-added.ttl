@@ -1,7 +1,9 @@
-# What the published file lacks: the suggested prefix of the ontology. Only metadata; never a new
-# term (see README §The data).
+# What the published file lacks: the suggested prefix and a description of the ontology. Only metadata;
+# never a new term (see README §The data).
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 <http://www.w3.org/2001/XMLSchema#>
+    dcterms:description "XML Schema 1.1 Part 2: Datatypes defines facilities for defining datatypes to be used in XML Schemas as well as other XML specifications." ;
     vann:preferredNamespacePrefix "xsd" ;
     vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
