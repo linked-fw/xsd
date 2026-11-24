@@ -15,7 +15,7 @@ import test from 'node:test';
  *
  * The assertion is on the *package segment*, not the whole IRI, because the
  * surrounding scheme belongs to `@_linked/core` and has changed across its
- * versions — arch-02's `{baseUri}shape/{slug}/{Name}` today,
+ * versions — `{baseUri}shape/{slug}/{Name}` today,
  * `data.lincd.org/module/{sanitized}/shape/{name}` in the 2.6.x that this
  * repo's package-lock still pins. Which package owns the shape is the thing
  * this test is about, and it is the one part that holds on every version.
