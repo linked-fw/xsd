@@ -1,5 +1,15 @@
 # @\_linked/xsd
 
+## 2.0.0
+
+### Major Changes
+
+- [#80](https://github.com/linked-fw/xsd/pull/80) [`4132c0b`](https://github.com/linked-fw/xsd/commit/4132c0bf6eb5c105c735e0a2f0d314dff8148d28) Thanks [@flyon](https://github.com/flyon)! - Ontology modules in the one-index layout, and no prefix registered. `ontologies/xsd` holds only the terms, each an `{id}` with its full IRI. `ontologies/index` registers every ontology of the package with core's `registerOntologies` (data and suggested prefix); the package entry and `shapes/index` import it. Removed: the `ontologies/<name>.data` and `ontologies/<name>.register` modules (`ns`, `dataFiles`, `loadData`, `_ontologyResource`) and `linkedOntology` from `package` (now `registerOntologies`). The package no longer adds a prefix: an app lists the prefixes it uses in its own prefix map. For a namespace function use `createNameSpace(namespace)` from `@_linked/core/utils/NameSpace`; for the data, the registration from `getRegisteredOntologies()`. Namespaces, term names and term IRIs are unchanged. Requires the core release with `registerOntologies`.
+
+### Patch Changes
+
+- [#80](https://github.com/linked-fw/xsd/pull/80) [`b97137f`](https://github.com/linked-fw/xsd/commit/b97137fdfb00f2a4a483a8a92523115c1fffe787) Thanks [@flyon](https://github.com/flyon)! - The ontology data carries its suggested prefix (xsd) as `vann:preferredNamespacePrefix` and `vann:preferredNamespaceUri` in an added data file, as `linked build` now requires; modules regenerated. Prefixes and terms unchanged.
+
 ## 1.4.4
 
 ### Patch Changes
